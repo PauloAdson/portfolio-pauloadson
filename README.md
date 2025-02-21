@@ -1,4 +1,4 @@
-# Portfolio | Com React.Js + Vite
+# Portfolio | React + Vite
 
 <img src="https://github.com/user-attachments/assets/8d0d5602-1c3c-4cc0-a52c-99277fd23057" alt="Portfólio do Paulo Adson" title="Portfólio do Paulo Adson">
 
