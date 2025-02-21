@@ -1,0 +1,106 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 12px;
+  background-color: var(--cor-terciaria);
+}
+
+nav.footer_nav {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: baseline; */
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  gap: 62px;
+  max-width: 1640px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+div.footer_nav-links-sociais {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+
+/* Smartphone Geral */
+@media screen and (min-width:320px) and (max-width: 767px) {}
+
+ul.lista-links-sociais {
+  display: flex;
+  gap: 32px;
+}
+
+ul.lista-links-sociais a {
+  color: var(--cor-secundaria);
+}
+
+ul.lista-links-sociais a:hover {
+  opacity: 0.8;
+}
+
+ul.footer_links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+ul.footer_links-container li {
+  list-style: disc inside;
+  color: var(--cor-secundaria);
+}
+
+ul.footer_links-container li .footer_link {
+  color: var(--cor-secundaria);
+  transition: 0.9s;
+}
+
+ul.footer_links-container li .footer_link:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+
+.footer_nav-titulo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--cor-secundaria);
+}
+
+div.footer_copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background-color: var(--cor-secundaria);
+}
+
+div.footer_copyright p {
+  color: var(--cor-primaria-opacidade);
+}
+
+div.footer_copyright a {
+  color: var(--cor-terciaria);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+div.footer_copyright a:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 925px) {
+  nav.footer_nav {
+    flex-direction: column;
+  }
+
+  ul.footer_links-container {
+    gap: 32px;
+  }
+}
