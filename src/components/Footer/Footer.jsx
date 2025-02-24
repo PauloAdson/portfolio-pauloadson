@@ -54,12 +54,12 @@ const Footer = () => {
           <ul className="footer_links-container">
             <h4 className="footer_nav-titulo">Links rápidos</h4>
             <li>
-              <Link to={"/"} className="footer_link" rel="noopener">
+              <Link to={"/#inicio"} className="footer_link" rel="noopener">
                 Início
               </Link>
             </li>
             <li>
-              <Link to={"/portfolio"} className="footer_link" rel="noopener">
+              <Link to={"/portfolio/#projetos"} className="footer_link" rel="noopener">
                 Portfólio
               </Link>
             </li>

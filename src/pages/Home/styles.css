@@ -1,11 +1,12 @@
-section.hero {
+.hero {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     box-sizing: border-box;
     height: 100svh;
-    padding: 0 2rem;
+    padding: 0 12px;
+    margin-bottom: 60px;
     color: var(--cor-secundaria);
 }
 
@@ -41,22 +42,77 @@ section.hero {
     max-width: 1100px;
 }
 
-.hero__btn {
+/* SEÇÃO BENEFICIOS */
+
+.beneficios {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    width: 330px;
-    height: 70px;
-    font-size: 2.4rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    background-color: var(--cor-terciaria);
-    color: inherit;
-    border-radius: 39px;
-    transition: 0.5s;
+    gap: 42px;
+    max-width: 1340px;
+    width: 100%;
+    padding: 0 12px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.hero__btn:hover {
-    background-color: var(--cor-terciaria-claro);
+.beneficios__title {
+    font-size: 3.2rem;
+
+    text-align: center;
+}
+
+.beneficios__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
+}
+
+/* SEÇÃO PORTFOLIO */
+
+.portfolio__home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 40px;
+    margin-bottom: 60px;
+    padding: 0 12px;
+}
+
+/* SEÇÃO DEPOIMENTOS */
+
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 62px;
+    max-width: 1640px;
+    width: 100%;
+    padding: 0 12px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.depoimentos__container-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+}
+
+.depoimentos__subtitle {
+    font-size: 1.8rem;
+}
+
+.depoimentos__title {
+    font-size: 3.2rem;
 }
