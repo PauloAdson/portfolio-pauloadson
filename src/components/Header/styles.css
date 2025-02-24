@@ -115,7 +115,7 @@ li a.menu-links:hover {
 }
 
 .nav-list.active li {
-    animation: navLinkFade 0.6s ease-in forwards;
+    animation: navLinkFade 0.4s ease-in forwards;
 }
 
 .mobile-menu.active .line1 {
