@@ -61,7 +61,6 @@ const Header = () => {
                 Sobre
               </Link>
             </li>
-            {/* <li><a onClick={this.closeMenu} className="menu-links" href="/certificados">Certificados</a></li> */}
             <li>
               <Link to={"/contato"} className="menu-links" onClick={closeMenu}>
                 Contato
