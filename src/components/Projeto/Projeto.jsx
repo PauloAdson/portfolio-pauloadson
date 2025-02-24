@@ -15,7 +15,6 @@ const Projeto = ({ class_projeto_img, projeto_img, projeto_img_desc, projeto_tit
     setIsModalOpen(false)
   }
 
-
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === "Escape" && isModalOpen) {
@@ -53,7 +52,7 @@ const Projeto = ({ class_projeto_img, projeto_img, projeto_img_desc, projeto_tit
           </p>
           <div className="projeto__container-logo-linguagens">
             {projeto_linguagens.map((linguagem, index) => (
-              <img className="projeto__logo-linguagens" key={index} src={linguagem.src} alt={linguagem.desc} />
+              <img className="projeto__logo-linguagens" key={index} src={linguagem.src} alt={linguagem.desc} title={linguagem.desc} />
             ))}
           </div>
           <Link

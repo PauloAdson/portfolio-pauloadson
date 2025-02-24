@@ -2,6 +2,9 @@ import React from "react";
 import "./styles.css";
 import ParticlesComponent from "../../components/Particles/Particles";
 import Beneficio from "../../components/Beneficio/Beneficio";
+import Button from "../../components/Button/Button";
+import CarrosselDepoimentos from "../../components/CarrosselDepoimentos/CarrosselDepoimentos";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMobileScreenButton } from "@fortawesome/free-solid-svg-icons/faMobileScreenButton";
 import { faGaugeHigh } from "@fortawesome/free-solid-svg-icons";
@@ -9,7 +12,6 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faCropSimple } from "@fortawesome/free-solid-svg-icons";
 import { faChartLine } from "@fortawesome/free-solid-svg-icons";
 import Projeto from "../../components/Projeto/Projeto";
-import { Link } from "react-router-dom";
 import html5Logo from "../../assets/images/logos-ferramentas/html5-logo.png"
 import css3Logo from "../../assets/images/logos-ferramentas/css3-logo.png"
 import figmaLogo from "../../assets/images/logos-ferramentas/figma-logo.png"
@@ -19,8 +21,6 @@ import mysqlLogo from "../../assets/images/logos-ferramentas/mysql-logo.png"
 import nodejsLogo from "../../assets/images/logos-ferramentas/nodejs-logo.png"
 import phpLogo from "../../assets/images/logos-ferramentas/php-logo.png"
 import reactLogo from "../../assets/images/logos-ferramentas/react-logo.png"
-import Button from "../../components/Button/Button";
-import Depoimento from "../../components/Depoimento/Depoimento";
 
 const Home = () => {
   return (
@@ -61,7 +61,13 @@ const Home = () => {
         </section>
 
         <section className="portfolio__home">
-          <h2 className="beneficios__title uppercase">Alguns dos sites que já desenvolvi</h2>
+          <div className="portfolio__container-title">
+
+            <h2 className="portfolio__title uppercase">Alguns dos sites que já desenvolvi</h2>
+            <span className="projetos__subtitle">
+              Clique na imagem para ver o projeto completo!
+            </span>
+          </div>
 
           <div className="projetos__container-projetos">
 
@@ -144,12 +150,14 @@ const Home = () => {
           <Button btnText={"ver portfólio"} btnLink={"/portfolio/#projetos"} target={"_self"} />
 
         </section>
+
         <section className="depoimentos">
           <div className="depoimentos__container-title">
             <h2 className="depoimentos__title uppercase">O que dizem sobre meu trabalho</h2>
             <span className="depoimentos__subtitle">Veja o que meus clientes dizem sobre os sites que desenvolvi:</span>
           </div>
-          <Depoimento />
+
+          <CarrosselDepoimentos />
         </section>
       </main>
     </>
