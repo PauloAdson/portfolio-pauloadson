@@ -1,41 +1,50 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 import "./styles.css";
 import { Link } from "react-router-dom";
 
-const Projeto = ({ class_projeto_img, projeto_img, projeto_img_desc, projeto_title, projeto_desc, projeto_linguagens, projeto_link }) => {
+const Projeto = ({
+  class_projeto_img,
+  projeto_img,
+  projeto_img_desc,
+  projeto_title,
+  projeto_desc,
+  projeto_linguagens,
+  projeto_link,
+}) => {
   const [animate, setAnimate] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false)
-  const [modalImageSrc, setModalImageSrc] = useState("")
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImageSrc, setModalImageSrc] = useState("");
 
   const handleImageClick = () => {
-    setIsModalOpen(true), setModalImageSrc(projeto_img)
-  }
+    setIsModalOpen(true), setModalImageSrc(projeto_img);
+  };
 
   const closeModal = () => {
-    setIsModalOpen(false)
-  }
+    setIsModalOpen(false);
+  };
 
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === "Escape" && isModalOpen) {
         closeModal();
       }
-    }
+    };
 
     document.addEventListener("keydown", handleKeyDown);
 
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
-    }
-  }, [isModalOpen])
+    };
+  }, [isModalOpen]);
 
   return (
     <>
       <div className="projeto">
         <div className="projeto__container-img">
           <img
-            className={`projeto__img ${class_projeto_img || ""
-              } ${animate ? "animate" : ""}`}
+            className={`projeto__img ${class_projeto_img || ""} ${
+              animate ? "animate" : ""
+            }`}
             src={projeto_img}
             alt={projeto_img_desc}
             title={projeto_img_desc}
@@ -44,15 +53,17 @@ const Projeto = ({ class_projeto_img, projeto_img, projeto_img_desc, projeto_tit
         </div>
 
         <div className="projeto__container-info">
-          <h3 className="projeto_container-info-title">
-            {projeto_title}
-          </h3>
-          <p className="projeto_container-content-text">
-            {projeto_desc}
-          </p>
+          <h3 className="projeto_container-info-title">{projeto_title}</h3>
+          <p className="projeto_container-content-text">{projeto_desc}</p>
           <div className="projeto__container-logo-linguagens">
             {projeto_linguagens.map((linguagem, index) => (
-              <img className="projeto__logo-linguagens" key={index} src={linguagem.src} alt={linguagem.desc} title={linguagem.desc} />
+              <img
+                className="projeto__logo-linguagens"
+                key={index}
+                src={linguagem.src}
+                alt={linguagem.desc}
+                title={linguagem.desc}
+              />
             ))}
           </div>
           <Link
@@ -86,7 +97,7 @@ const Projeto = ({ class_projeto_img, projeto_img, projeto_img_desc, projeto_tit
         </div>
       )}
     </>
-  )
-}
+  );
+};
 
-export default Projeto
+export default Projeto;
