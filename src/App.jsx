@@ -5,7 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import { Contato } from "./pages/Contato/Contato";
-import { Obrigado } from "./pages/Obrigado/Obrigado";
+// import { Obrigado } from "./pages/Obrigado/Obrigado";
 import ScrollToHash from "./components/ScrollToHash/ScrollToHash";
 
 const App = () => {
@@ -16,10 +16,10 @@ const App = () => {
         <Header />
 
         <Routes>
-          <Route path="/" element={<Home id="teste" />} />
+          <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contato" element={<Contato />} />
-          <Route path="/obrigado" element={<Obrigado />} />
+          {/* <Route path="/obrigado" element={<Obrigado />} /> */}
         </Routes>
 
         <Footer />
