@@ -3,13 +3,19 @@ import "./styles.css";
 import logoAzevedoAdvocacia from "../../assets/images/logos-clientes/azevedo-advocacia-logo.png";
 import { Link } from "react-router-dom";
 
-const Depoimento = ({ bgLogo, cliente, logoCliente, comentario }) => {
+const Depoimento = ({
+  bgLogo,
+  cliente,
+  logoCliente,
+  comentario,
+  linkSiteCliete,
+}) => {
   return (
     <>
       <div className="depoimento">
         <Link
           className={`depoimento__container-logo ${bgLogo}`}
-          to={"https://asazevedo.adv.br/"}
+          to={linkSiteCliete}
           target="_blank"
           rel="noopener"
         >

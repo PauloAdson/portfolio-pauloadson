@@ -12,15 +12,15 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { faCropSimple } from "@fortawesome/free-solid-svg-icons";
 import { faChartLine } from "@fortawesome/free-solid-svg-icons";
 import Projeto from "../../components/Projeto/Projeto";
-import html5Logo from "../../assets/images/logos-ferramentas/html5-logo.png"
-import css3Logo from "../../assets/images/logos-ferramentas/css3-logo.png"
-import figmaLogo from "../../assets/images/logos-ferramentas/figma-logo.png"
-import javascriptLogo from "../../assets/images/logos-ferramentas/javascript-logo.png"
-import mongodbLogo from "../../assets/images/logos-ferramentas/mongodb-logo.png"
-import mysqlLogo from "../../assets/images/logos-ferramentas/mysql-logo.png"
-import nodejsLogo from "../../assets/images/logos-ferramentas/nodejs-logo.png"
-import phpLogo from "../../assets/images/logos-ferramentas/php-logo.png"
-import reactLogo from "../../assets/images/logos-ferramentas/react-logo.png"
+import html5Logo from "../../assets/images/logos-ferramentas/html5-logo.png";
+import css3Logo from "../../assets/images/logos-ferramentas/css3-logo.png";
+import figmaLogo from "../../assets/images/logos-ferramentas/figma-logo.png";
+import javascriptLogo from "../../assets/images/logos-ferramentas/javascript-logo.png";
+import mongodbLogo from "../../assets/images/logos-ferramentas/mongodb-logo.png";
+import mysqlLogo from "../../assets/images/logos-ferramentas/mysql-logo.png";
+import nodejsLogo from "../../assets/images/logos-ferramentas/nodejs-logo.png";
+import phpLogo from "../../assets/images/logos-ferramentas/php-logo.png";
+import reactLogo from "../../assets/images/logos-ferramentas/react-logo.png";
 
 const Home = () => {
   return (
@@ -38,39 +38,77 @@ const Home = () => {
                 clientes e expandir sua presença online.
               </h2>
             </div>
-            <Button btnText={"Fazer orçamento"} btnLink={"https://wa.me/62995132226?text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20or%C3%A7amento."} target={"_blank"} />
-
+            <Button
+              btnText={"Fazer orçamento"}
+              btnLink={
+                "https://wa.me/62995132226?text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20or%C3%A7amento."
+              }
+              target={"_blank"}
+            />
           </div>
         </section>
 
         <section className="beneficios">
-          <h2 className="beneficios__title uppercase">Sua empresa precisa estar online!</h2>
+          <h2 className="beneficios__title uppercase">
+            Sua empresa precisa estar online!
+          </h2>
           <div className="beneficios__container">
-            <Beneficio beneficioIcon={faMobileScreenButton} beneficioTitle={"100% Responsivo"} beneficioParag={"Funciona perfeitamente em qualquer dispositivo."} />
+            <Beneficio
+              beneficioIcon={faMobileScreenButton}
+              beneficioTitle={"100% Responsivo"}
+              beneficioParag={"Funciona perfeitamente em qualquer dispositivo."}
+            />
 
-            <Beneficio beneficioIcon={faGaugeHigh} beneficioTitle={"Carregamento rápido"} beneficioParag={"Sites otimizados para melhor performance."} />
+            <Beneficio
+              beneficioIcon={faGaugeHigh}
+              beneficioTitle={"Carregamento rápido"}
+              beneficioParag={"Sites otimizados para melhor performance."}
+            />
 
-            <Beneficio beneficioIcon={faMagnifyingGlass} beneficioTitle={"SEO otimizado"} beneficioParag={"Sites otimizados para mecanismos de busca ajudam seu negócio a ser encontrado mais facilmente."} />
+            <Beneficio
+              beneficioIcon={faMagnifyingGlass}
+              beneficioTitle={"SEO otimizado"}
+              beneficioParag={
+                "Sites otimizados para mecanismos de busca ajudam seu negócio a ser encontrado mais facilmente."
+              }
+            />
 
-            <Beneficio beneficioIcon={faCropSimple} beneficioTitle={"Design moderno"} beneficioParag={"Visual profissional e exclusivo para seu negócio."} />
+            <Beneficio
+              beneficioIcon={faCropSimple}
+              beneficioTitle={"Design moderno"}
+              beneficioParag={
+                "Visual profissional e exclusivo para seu negócio."
+              }
+            />
 
-            <Beneficio beneficioIcon={faChartLine} beneficioTitle={"Conversão"} beneficioParag={"Transforme visitantes em clientes com um site eficiente."} />
+            <Beneficio
+              beneficioIcon={faChartLine}
+              beneficioTitle={"Conversão"}
+              beneficioParag={
+                "Transforme visitantes em clientes com um site eficiente."
+              }
+            />
           </div>
-          <Button btnText={"Fazer orçamento"} btnLink={"https://wa.me/62995132226?text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20or%C3%A7amento."} target={"_blank"} />
-
+          <Button
+            btnText={"Fazer orçamento"}
+            btnLink={
+              "https://wa.me/62995132226?text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20or%C3%A7amento."
+            }
+            target={"_blank"}
+          />
         </section>
 
         <section className="portfolio__home">
           <div className="portfolio__container-title">
-
-            <h2 className="portfolio__title uppercase">Alguns dos sites que já desenvolvi</h2>
+            <h2 className="portfolio__title uppercase">
+              Alguns dos sites que já desenvolvi
+            </h2>
             <span className="projetos__subtitle">
               Clique na imagem para ver o projeto completo!
             </span>
           </div>
 
           <div className="projetos__container-projetos">
-
             <Projeto
               class_projeto_img="azevedo-advocacia"
               projeto_img={
@@ -145,16 +183,22 @@ const Home = () => {
               ]}
               projeto_link="https://maratonavocal.vercel.app/"
             />
-
           </div>
-          <Button btnText={"ver portfólio"} btnLink={"/portfolio/#projetos"} target={"_self"} />
-
+          <Button
+            btnText={"ver portfólio"}
+            btnLink={"/portfolio/#projetos"}
+            target={"_self"}
+          />
         </section>
 
         <section className="depoimentos">
           <div className="depoimentos__container-title">
-            <h2 className="depoimentos__title uppercase">O que dizem sobre meu trabalho</h2>
-            <span className="depoimentos__subtitle">Veja o que meus clientes dizem sobre os sites que desenvolvi:</span>
+            <h2 className="depoimentos__title uppercase">
+              O que dizem sobre meu trabalho
+            </h2>
+            <span className="depoimentos__subtitle">
+              Veja o que meus clientes dizem sobre os sites que desenvolvi:
+            </span>
           </div>
 
           <CarrosselDepoimentos />

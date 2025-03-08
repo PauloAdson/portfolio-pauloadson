@@ -125,6 +125,10 @@
   height: auto;
 }
 
+.projeto__img:hover {
+  cursor: pointer;
+}
+
 /* Projetos imagem modal */
 
 div.modal {
