@@ -1,6 +1,7 @@
 // import { Link } from "react-router-dom";
 import React from "react";
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 const Obrigado = () => {
   return (
@@ -8,9 +9,9 @@ const Obrigado = () => {
       <div className="content-obrigado">
         <h1 className="h1-obrigado">Obrigado pelo contato!</h1>
         <p className="p-obrigado">Em breve estarei respondendo</p>
-        <a className="btn-voltar-ao-inicio" href="/">
+        <Link className="btn-voltar-ao-inicio" to="/">
           Voltar ao ínicio
-        </a>
+        </Link>
       </div>
     </main>
   );
