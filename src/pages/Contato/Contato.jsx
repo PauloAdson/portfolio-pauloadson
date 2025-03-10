@@ -42,7 +42,7 @@ export class Contato extends React.Component {
               <input
                 type="hidden"
                 name="redirectTo"
-                value="https://www.pauloadson.com.br"
+                value="https://www.pauloadson.com.br/obrigado"
               />
             </form>
           </section>
