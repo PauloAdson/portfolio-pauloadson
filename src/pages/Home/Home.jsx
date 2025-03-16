@@ -21,6 +21,7 @@ import mysqlLogo from "../../assets/images/logos-ferramentas/mysql-logo.png";
 import nodejsLogo from "../../assets/images/logos-ferramentas/nodejs-logo.png";
 import phpLogo from "../../assets/images/logos-ferramentas/php-logo.png";
 import reactLogo from "../../assets/images/logos-ferramentas/react-logo.png";
+import Accordion from "../../components/Accordion/Accordion";
 
 const Home = () => {
   return (
@@ -202,6 +203,33 @@ const Home = () => {
           </div>
 
           <CarrosselDepoimentos />
+        </section>
+
+        <section className="duvidas">
+          <h2 className="duvidas__title uppercase">Dúvidas Frequentes</h2>
+
+          <div className="duvidas__container-accordion">
+            <Accordion
+              title="Quais tipos de sites você desenvolve?"
+              response="Desenvolvo sites institucionais, blogs, portfólios, landing pages, lojas virtuais e sistemas web. Todos os sites são responsivos e otimizados para SEO."
+            />
+            <Accordion
+              title="Quais tecnologias você utiliza?"
+              response="Trabalho com HTML, CSS, JavaScript, React, Node.js, PHP, MySQL e WordPress. Utilizo o Figma para prototipagem e design."
+            />
+            <Accordion
+              title="Quanto tempo leva para desenvolver um site?"
+              response="Depende do projeto, mas uma landing page pode levar entre 3 a 7 dias, enquanto sites mais complexos podem levar algumas semanas."
+            />
+            <Accordion
+              title="Qual o valor para criar um site?"
+              response="O preço varia de acordo com a complexidade do projeto. Entre em contato para um orçamento personalizado."
+            />
+            <Accordion
+              title="Você oferece manutenção e suporte?"
+              response="Sim! Tenho planos mensais de manutenção, garantindo atualizações, segurança, backups e otimizações para o seu site."
+            />
+          </div>
         </section>
       </main>
     </>
