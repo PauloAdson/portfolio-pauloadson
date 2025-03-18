@@ -22,6 +22,7 @@ import nodejsLogo from "../../assets/images/logos-ferramentas/nodejs-logo.png";
 import phpLogo from "../../assets/images/logos-ferramentas/php-logo.png";
 import reactLogo from "../../assets/images/logos-ferramentas/react-logo.png";
 import Accordion from "../../components/Accordion/Accordion";
+import Formulario from "../../components/Formulario/Formulario";
 
 const Home = () => {
   return (
@@ -230,6 +231,10 @@ const Home = () => {
               response="Sim! Tenho planos mensais de manutenção, garantindo atualizações, segurança, backups e otimizações para o seu site."
             />
           </div>
+        </section>
+
+        <section className="contato">
+          <Formulario />
         </section>
       </main>
     </>

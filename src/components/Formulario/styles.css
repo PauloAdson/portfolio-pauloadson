@@ -1,0 +1,94 @@
+main.contato_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    /* height: 100vh; */
+    padding: 6.2rem 1rem;
+}
+
+section#contato {
+    background-color: var(--cor-terciaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    width: 500px;
+    border-radius: 16px;
+}
+
+section#contato h2 {
+    color: var(--cor-secundaria);
+    font-size: 24px;
+    margin: 2rem;
+}
+
+section#contato form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label {
+    font-size: 17px;
+    margin-bottom: 4px;
+    color: var(--cor-secundaria);
+}
+
+form input {
+    padding: 16px;
+    outline: none;
+    border: 0;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+form input:focus {
+    background-color: var(--cor-secundaria-escuro);
+}
+
+form textarea {
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius: 16px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    resize: none;
+}
+
+form textarea:focus {
+    background-color: var(--cor-secundaria-escuro);
+}
+
+form button {
+    background: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 16px;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+form button:hover {
+    background-color: var(--cor-secundaria-escuro);
+}
+
+/* Smartphones */
+@media screen and (min-width:320px) and (max-width: 767px) {
+    section#contato {
+        width: auto;
+        padding: 1rem 2rem;
+    }
+}
+
+@media screen and (min-width: 336px) and (max-width: 413px) {
+    section#contato {
+        padding: 1rem;
+    }
+}
