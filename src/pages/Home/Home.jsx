@@ -22,7 +22,7 @@ import nodejsLogo from "../../assets/images/logos-ferramentas/nodejs-logo.png";
 import phpLogo from "../../assets/images/logos-ferramentas/php-logo.png";
 import reactLogo from "../../assets/images/logos-ferramentas/react-logo.png";
 import Accordion from "../../components/Accordion/Accordion";
-import Formulario from "../../components/Formulario/Formulario";
+// import Formulario from "../../components/Formulario/Formulario";
 
 const Home = () => {
   return (
@@ -233,9 +233,9 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="contato">
+        {/* <section className="contato">
           <Formulario />
-        </section>
+        </section> */}
       </main>
     </>
   );
