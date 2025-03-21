@@ -1,15 +1,16 @@
-import React, { useState } from "react";
-import "./styles.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
-import { faSubtract } from "@fortawesome/free-solid-svg-icons";
+import { useState } from 'react'
+import PropTypes from 'prop-types'
+import './styles.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faSubtract } from '@fortawesome/free-solid-svg-icons'
 
 const Accordion = ({ title, response }) => {
-  const [activeAccordion, setActiveAccordion] = useState(false);
+  const [activeAccordion, setActiveAccordion] = useState(false)
 
   const toggleClassAccordion = () => {
-    setActiveAccordion((prev) => !prev);
-  };
+    setActiveAccordion((prev) => !prev)
+  }
 
   return (
     <div className="accordion__container">
@@ -26,14 +27,19 @@ const Accordion = ({ title, response }) => {
       <div
         className={
           activeAccordion
-            ? "accordion__container-resposta active"
-            : "accordion__container-resposta"
+            ? 'accordion__container-resposta active'
+            : 'accordion__container-resposta'
         }
       >
         <p className="accordion__resposta">{response}</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Accordion;
+Accordion.propTypes = {
+  title: PropTypes.string.isRequired,
+  response: PropTypes.string.isRequired,
+}
+
+export default Accordion

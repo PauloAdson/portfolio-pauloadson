@@ -1,24 +1,20 @@
-import React from "react";
-// import { Projeto } from "../Projeto/Projetoantigo";
-import "./styles.css";
-import { Link } from "react-router-dom";
-import html5Logo from "../../assets/images/logos-ferramentas/html5-logo.png"
-import css3Logo from "../../assets/images/logos-ferramentas/css3-logo.png"
-import figmaLogo from "../../assets/images/logos-ferramentas/figma-logo.png"
-import javascriptLogo from "../../assets/images/logos-ferramentas/javascript-logo.png"
-import mongodbLogo from "../../assets/images/logos-ferramentas/mongodb-logo.png"
-import mysqlLogo from "../../assets/images/logos-ferramentas/mysql-logo.png"
-import nodejsLogo from "../../assets/images/logos-ferramentas/nodejs-logo.png"
-import phpLogo from "../../assets/images/logos-ferramentas/php-logo.png"
-import reactLogo from "../../assets/images/logos-ferramentas/react-logo.png"
-import Projeto from "../Projeto/Projeto";
-import Button from "../Button/Button";
+import './styles.css'
+import html5Logo from '../../assets/images/logos-ferramentas/html5-logo.png'
+import css3Logo from '../../assets/images/logos-ferramentas/css3-logo.png'
+import figmaLogo from '../../assets/images/logos-ferramentas/figma-logo.png'
+import javascriptLogo from '../../assets/images/logos-ferramentas/javascript-logo.png'
+import mongodbLogo from '../../assets/images/logos-ferramentas/mongodb-logo.png'
+import mysqlLogo from '../../assets/images/logos-ferramentas/mysql-logo.png'
+import nodejsLogo from '../../assets/images/logos-ferramentas/nodejs-logo.png'
+import phpLogo from '../../assets/images/logos-ferramentas/php-logo.png'
+import reactLogo from '../../assets/images/logos-ferramentas/react-logo.png'
+import Projeto from '../Projeto/Projeto'
+import Button from '../Button/Button'
 
 const Projetos = () => {
   return (
     <>
       <section className="projetos" id="projetos">
-
         <div className="projetos__container-title">
           <h2 className="projetos__title uppercase">Projetos</h2>
           <span className="projetos__subtitle">
@@ -30,7 +26,7 @@ const Projetos = () => {
           <Projeto
             class_projeto_img="azevedo-advocacia"
             projeto_img={
-              "https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/azevedo-avocacia.png"
+              'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/azevedo-avocacia.png'
             }
             projeto_img_desc="Imagem da Página Azevedo Advocia e Consultoria Jurídica"
             projeto_title="Azevedo Advocia e Consultoria Jurídica"
@@ -38,15 +34,15 @@ const Projetos = () => {
             projeto_linguagens={[
               {
                 src: html5Logo,
-                desc: "Logo HTML5",
+                desc: 'Logo HTML5',
               },
               {
                 src: css3Logo,
-                desc: "Logo CSS3",
+                desc: 'Logo CSS3',
               },
               {
                 src: figmaLogo,
-                desc: "Logo Figma",
+                desc: 'Logo Figma',
               },
             ]}
             projeto_link="https://asazevedo.adv.br/"
@@ -55,7 +51,7 @@ const Projetos = () => {
           <Projeto
             class_projeto_img="furlan-solucoes"
             projeto_img={
-              "https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/site-furlan-desktop.png"
+              'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/site-furlan-desktop.png'
             }
             projeto_img_desc="Imagem da Página Furlan Soluções Financeiras"
             projeto_title="Furlan Soluções Financeiras"
@@ -63,15 +59,15 @@ const Projetos = () => {
             projeto_linguagens={[
               {
                 src: html5Logo,
-                desc: "Logo HTML5",
+                desc: 'Logo HTML5',
               },
               {
                 src: css3Logo,
-                desc: "Logo CSS3",
+                desc: 'Logo CSS3',
               },
               {
                 src: figmaLogo,
-                desc: "Logo Figma",
+                desc: 'Logo Figma',
               },
             ]}
             projeto_link="https://furlansolucoesfinanceiras.com.br/"
@@ -80,7 +76,7 @@ const Projetos = () => {
           <Projeto
             class_projeto_img="maratona-vocal"
             projeto_img={
-              "https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/maratonavocal.png"
+              'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/maratonavocal.png'
             }
             projeto_img_desc="Imagem página de vendas Maratona Vocal"
             projeto_title="Página de Vendas | Maratona Vocal"
@@ -88,15 +84,15 @@ const Projetos = () => {
             projeto_linguagens={[
               {
                 src: reactLogo,
-                desc: "Logo React",
+                desc: 'Logo React',
               },
               {
                 src: html5Logo,
-                desc: "Logo HTML5",
+                desc: 'Logo HTML5',
               },
               {
                 src: css3Logo,
-                desc: "Logo CSS3",
+                desc: 'Logo CSS3',
               },
             ]}
             projeto_link="https://maratonavocal.vercel.app/"
@@ -105,7 +101,7 @@ const Projetos = () => {
           <Projeto
             class_projeto_img="petlife"
             projeto_img={
-              "https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/petlife.png"
+              'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/petlife.png'
             }
             projeto_img_desc="Imagem página de uma clínica veterinária PetLife"
             projeto_title="PetLife"
@@ -113,15 +109,15 @@ const Projetos = () => {
             projeto_linguagens={[
               {
                 src: html5Logo,
-                desc: "Logo HTML5",
+                desc: 'Logo HTML5',
               },
               {
                 src: css3Logo,
-                desc: "Logo CSS3",
+                desc: 'Logo CSS3',
               },
               {
                 src: javascriptLogo,
-                desc: "Logo JavaScript",
+                desc: 'Logo JavaScript',
               },
             ]}
             projeto_link="https://petlife-one.vercel.app/"
@@ -130,7 +126,7 @@ const Projetos = () => {
           <Projeto
             class_projeto_img="Aulas de Música"
             projeto_img={
-              "https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/aulas-de-musica.png"
+              'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/aulas-de-musica.png'
             }
             projeto_img_desc="Imagem da Página Aulas de Música"
             projeto_title="Aulas de Música"
@@ -138,19 +134,19 @@ const Projetos = () => {
             projeto_linguagens={[
               {
                 src: reactLogo,
-                desc: "Logo React",
+                desc: 'Logo React',
               },
               {
                 src: html5Logo,
-                desc: "Logo HTML5",
+                desc: 'Logo HTML5',
               },
               {
                 src: css3Logo,
-                desc: "Logo CSS3",
+                desc: 'Logo CSS3',
               },
               {
                 src: figmaLogo,
-                desc: "Logo Figma",
+                desc: 'Logo Figma',
               },
             ]}
             projeto_link="https://paulo-aulas-de-musica.vercel.app/"
@@ -159,7 +155,7 @@ const Projetos = () => {
           <Projeto
             class_projeto_img="landing-page"
             projeto_img={
-              "https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/landing-page.png"
+              'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/landing-page.png'
             }
             projeto_img_desc="Imagem da Landing Page"
             projeto_title="Landing Page"
@@ -167,15 +163,15 @@ const Projetos = () => {
             projeto_linguagens={[
               {
                 src: html5Logo,
-                desc: "Logo HTML5",
+                desc: 'Logo HTML5',
               },
               {
                 src: css3Logo,
-                desc: "Logo CSS3",
+                desc: 'Logo CSS3',
               },
               {
                 src: figmaLogo,
-                desc: "Logo Figma",
+                desc: 'Logo Figma',
               },
             ]}
             projeto_link="https://pauloadson.github.io/landing-page/"
@@ -184,7 +180,7 @@ const Projetos = () => {
           <Projeto
             class_projeto_img="copia-spotify"
             projeto_img={
-              "https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/spotify.png"
+              'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/spotify.png'
             }
             projeto_img_desc="Imagem da Página Cópia do Spotify"
             projeto_title="Cópia do Spotify"
@@ -192,15 +188,15 @@ const Projetos = () => {
             projeto_linguagens={[
               {
                 src: reactLogo,
-                desc: "Logo React",
+                desc: 'Logo React',
               },
               {
                 src: nodejsLogo,
-                desc: "Logo Node",
+                desc: 'Logo Node',
               },
               {
                 src: mongodbLogo,
-                desc: "Logo MongoDB",
+                desc: 'Logo MongoDB',
               },
             ]}
             projeto_link="https://deploy-spotify-8v75.onrender.com/"
@@ -209,7 +205,7 @@ const Projetos = () => {
           <Projeto
             class_projeto_img="curso-ebd"
             projeto_img={
-              "https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/curso-ebd.png"
+              'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/curso-ebd.png'
             }
             projeto_img_desc="Imagem da Plataforma de Curso de Escola Bíblica"
             projeto_title="Plataforma de Curso | Escola Bíblica"
@@ -217,19 +213,19 @@ const Projetos = () => {
             projeto_linguagens={[
               {
                 src: reactLogo,
-                desc: "Logo React",
+                desc: 'Logo React',
               },
               {
                 src: nodejsLogo,
-                desc: "Logo Node",
+                desc: 'Logo Node',
               },
               {
                 src: mysqlLogo,
-                desc: "Logo Mysql",
+                desc: 'Logo Mysql',
               },
               {
-                src: "https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/figma-logo.png",
-                desc: "Logo Figma",
+                src: 'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/figma-logo.png',
+                desc: 'Logo Figma',
               },
             ]}
             projeto_link="https://curso-ebd.vercel.app/"
@@ -238,7 +234,7 @@ const Projetos = () => {
           <Projeto
             class_projeto_img="consulta-votacao"
             projeto_img={
-              "https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/consultarvotacao.png"
+              'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/consultarvotacao.png'
             }
             projeto_img_desc="Imagem página local de votação"
             projeto_title="Consulta de Local de Votação"
@@ -246,27 +242,30 @@ const Projetos = () => {
             projeto_linguagens={[
               {
                 src: html5Logo,
-                desc: "Logo HTML5",
+                desc: 'Logo HTML5',
               },
               {
                 src: css3Logo,
-                desc: "Logo CSS3",
+                desc: 'Logo CSS3',
               },
               {
                 src: phpLogo,
-                desc: "Logo PHP",
+                desc: 'Logo PHP',
               },
               {
                 src: mysqlLogo,
-                desc: "Logo MYSQL",
+                desc: 'Logo MYSQL',
               },
             ]}
             projeto_link="https://paulosites.com.br/eleicoes/consultar"
           />
 
-          <Button btnText={"GitHub + Projetos"} btnLink={"https://github.com/PauloAdson"} target={"_blank"} />
+          <Button
+            btnText={'GitHub + Projetos'}
+            btnLink={'https://github.com/PauloAdson'}
+            target={'_blank'}
+          />
         </div>
-
       </section>
     </>
   )

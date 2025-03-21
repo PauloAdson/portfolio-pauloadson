@@ -1,18 +1,16 @@
-import React from "react";
-import "./styles.css";
-import Projetos from "../../components/Projetos/Projetos";
-import logoHtml5 from "../../assets/images/logos-ferramentas/html5-logo.png";
-import logoCss3 from "../../assets/images/logos-ferramentas/css3-logo.png";
-import logoJavaScript from "../../assets/images/logos-ferramentas/javascript-logo.png";
-import logoReact from "../../assets/images/logos-ferramentas/react-logo.png";
-import logoLinkedin from "../../assets/images/logos-ferramentas/linkedin-logo.png";
-import logoGitHub from "../../assets/images/logos-ferramentas/github-logo.png";
-import pdfCurriculo from "../../assets/PauloAdson-Curriculo.pdf";
-import fotoDePaulo from "../../assets/images/paulo-adson.png";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
-
+import './styles.css'
+import Projetos from '../../components/Projetos/Projetos'
+import logoHtml5 from '../../assets/images/logos-ferramentas/html5-logo.png'
+import logoCss3 from '../../assets/images/logos-ferramentas/css3-logo.png'
+import logoJavaScript from '../../assets/images/logos-ferramentas/javascript-logo.png'
+import logoReact from '../../assets/images/logos-ferramentas/react-logo.png'
+import logoLinkedin from '../../assets/images/logos-ferramentas/linkedin-logo.png'
+import logoGitHub from '../../assets/images/logos-ferramentas/github-logo.png'
+import pdfCurriculo from '../../assets/PauloAdson-Curriculo.pdf'
+import fotoDePaulo from '../../assets/images/paulo-adson.png'
+import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 const Portfolio = () => {
   return (
@@ -29,7 +27,10 @@ const Portfolio = () => {
             />
             <h1 className="sobre__title-bold">
               Paulo Adson <br />
-              <span className="sobre__subtitle uppercase"> Desenvoldor Front-End</span>
+              <span className="sobre__subtitle uppercase">
+                {' '}
+                Desenvoldor Front-End
+              </span>
             </h1>
 
             <div className="sobre__container-logos-linguagens">
@@ -41,14 +42,14 @@ const Portfolio = () => {
 
             <div className="sobre__container-links-sociais">
               <Link
-                to={"https://www.linkedin.com/in/paulo-adson/"}
+                to={'https://www.linkedin.com/in/paulo-adson/'}
                 target="_blank"
                 rel="noopener"
               >
                 <img src={logoLinkedin} alt="logo-linkedin" width="42" />
               </Link>
               <Link
-                to={"https://github.com/PauloAdson"}
+                to={'https://github.com/PauloAdson'}
                 target="_blank"
                 rel="noopener"
               >
@@ -66,8 +67,8 @@ const Portfolio = () => {
               projetos envolventes e intuitivos. Estou constantemente em busca
               de novas oportunidades para aprimorar minhas habilidades e
               enfrentar desafios estimulantes. No momento, estou imerso nos
-              estudos de React, buscando expandir meu conhecimento e
-              contribuir para projetos inovadores.
+              estudos de React, buscando expandir meu conhecimento e contribuir
+              para projetos inovadores.
             </p>
             <Link
               to={pdfCurriculo}

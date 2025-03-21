@@ -1,147 +1,147 @@
 .portfolio {
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    padding: 0 12px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px;
 }
 
 /* SEÇÃO SOBRE */
 
 .sobre {
-    display: flex;
-    flex-flow: row wrap;
-    padding: 60px 0;
-    justify-content: center;
-    align-items: center;
-    max-width: 1640px;
-    margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 60px 0;
+  justify-content: center;
+  align-items: center;
+  max-width: 1640px;
+  margin: 0 auto;
 }
 
 .sobre__container {
-    background: var(--cor-terciaria);
-    color: var(--cor-secundaria);
-    position: relative;
-    width: 32rem;
-    height: 53.2rem;
-    box-sizing: border-box;
-    text-align: center;
-    margin-right: 3rem;
-    box-shadow: -12px 12px 20px 0px rgba(0, 0, 0, 0.20);
+  background: var(--cor-terciaria);
+  color: var(--cor-secundaria);
+  position: relative;
+  width: 32rem;
+  height: 53.2rem;
+  box-sizing: border-box;
+  text-align: center;
+  margin-right: 3rem;
+  box-shadow: -12px 12px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 .sobre__foto {
-    margin-top: 4rem;
-    margin-bottom: 4.9rem;
-    width: 190px;
+  margin-top: 4rem;
+  margin-bottom: 4.9rem;
+  width: 190px;
 }
 
 .sobre__title-bold {
-    font-weight: 700;
-    font-size: 1.8rem;
-    line-height: 24px;
-    margin-bottom: 0.8rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 24px;
+  margin-bottom: 0.8rem;
 }
 
 .sobre__container-logos-linguagens {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: var(--cor-secundaria-escuro);
-    padding: 0.8rem 0;
-    margin-top: 0.9rem;
-    margin-left: 2.4rem;
-    margin-right: 2.4rem;
-    border-radius: 1.6rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--cor-secundaria-escuro);
+  padding: 0.8rem 0;
+  margin-top: 0.9rem;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
+  border-radius: 1.6rem;
 }
 
 .sobre__container-links-sociais {
-    background: var(--cor-secundaria-escuro);
-    position: absolute;
-    bottom: 0;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+  background: var(--cor-secundaria-escuro);
+  position: absolute;
+  bottom: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .sobre__container-biografia {
-    width: 35rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1.2rem;
+  width: 35rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 .sobre__biografia-title {
-    font-size: 3.2rem;
+  font-size: 3.2rem;
 }
 
 .sobre__biografia-content {
-    text-align: justify;
-    line-height: 32px;
+  text-align: justify;
+  line-height: 32px;
 }
 
 .sobre__curriculo {
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    border: 1px solid var(--cor-terciaria);
-    border-radius: 2.6rem;
-    color: var(--cor-primaria);
-    font-weight: 600;
-    max-width: 350px;
-    width: 100%;
-    padding: 1.8rem 3.2rem;
-    transition: 0.5s;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border: 1px solid var(--cor-terciaria);
+  border-radius: 2.6rem;
+  color: var(--cor-primaria);
+  font-weight: 600;
+  max-width: 350px;
+  width: 100%;
+  padding: 1.8rem 3.2rem;
+  transition: 0.5s;
 }
 
 .sobre__curriculo:hover {
-    background-color: var(--cor-terciaria);
-    color: var(--cor-secundaria);
-    transition: 0.5s;
+  background-color: var(--cor-terciaria);
+  color: var(--cor-secundaria);
+  transition: 0.5s;
 }
 
 .sobre__curriculo:hover .fa-download {
-    color: var(--cor-secundaria);
-    transition: 0.5s;
+  color: var(--cor-secundaria);
+  transition: 0.5s;
 }
 
 .fa-download {
-    color: var(--cor-terciaria);
+  color: var(--cor-terciaria);
 }
 
 /* RESPONSIVIDADE */
 
 @media screen and (max-width: 999px) {
-    .sobre {
-        flex-flow: wrap;
-    }
+  .sobre {
+    flex-flow: wrap;
+  }
 }
 
 @media screen and (max-width: 741px) {
-    .sobre {
-        align-items: center;
-        gap: 42px;
-        padding: 42px 0;
-    }
+  .sobre {
+    align-items: center;
+    gap: 42px;
+    padding: 42px 0;
+  }
 
-    .sobre__container {
-        margin-right: 0;
-    }
+  .sobre__container {
+    margin-right: 0;
+  }
 
-    .sobre__container-biografia {
-        width: 100%;
-        align-items: center;
-        gap: 24px;
-    }
+  .sobre__container-biografia {
+    width: 100%;
+    align-items: center;
+    gap: 24px;
+  }
 
-    .sobre__biografia-title {
-        text-align: center;
-    }
+  .sobre__biografia-title {
+    text-align: center;
+  }
 
-    .sobre__biografia-content {
-        text-align: center;
-    }
+  .sobre__biografia-content {
+    text-align: center;
+  }
 }

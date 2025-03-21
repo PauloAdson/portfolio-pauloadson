@@ -1,7 +1,6 @@
-import React from "react";
-import "./styles.css";
-import logoAzevedoAdvocacia from "../../assets/images/logos-clientes/azevedo-advocacia-logo.png";
-import { Link } from "react-router-dom";
+import PropTypes from 'prop-types'
+import './styles.css'
+import { Link } from 'react-router-dom'
 
 const Depoimento = ({
   bgLogo,
@@ -30,7 +29,14 @@ const Depoimento = ({
         <p className="depoimento__comentario">{comentario}</p>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Depoimento;
+Depoimento.propTypes = {
+  bgLogo: PropTypes.string.isRequired,
+  cliente: PropTypes.string.isRequired,
+  logoCliente: PropTypes.string.isRequired,
+  comentario: PropTypes.string.isRequired,
+  linkSiteCliete: PropTypes.string.isRequired,
+}
+export default Depoimento

@@ -80,7 +80,9 @@ li a.menu-links:hover {
     /* transform: translateX(100%); */
     opacity: 0;
     visibility: hidden;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition:
+      transform 0.3s ease-in-out,
+      opacity 0.3s ease-in-out;
   }
 
   .nav-list li {

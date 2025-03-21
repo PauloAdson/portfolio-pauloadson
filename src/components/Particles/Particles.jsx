@@ -1,13 +1,14 @@
-import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { useEffect, useMemo, useState } from "react";
-import "./styles.css";
+import PropTypes from 'prop-types'
+import Particles, { initParticlesEngine } from '@tsparticles/react'
+import { useEffect, useMemo, useState } from 'react'
+import './styles.css'
 // import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+import { loadSlim } from '@tsparticles/slim' // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
 const ParticlesComponent = (props) => {
-  const [init, setInit] = useState(false);
+  const [setInit] = useState(false)
   // this should be run only once per application lifetime
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -16,36 +17,36 @@ const ParticlesComponent = (props) => {
       // starting from v2 you can add only the features you need reducing the bundle size
       //await loadAll(engine);
       //await loadFull(engine);
-      await loadSlim(engine);
+      await loadSlim(engine)
       //await loadBasic(engine);
     }).then(() => {
-      setInit(true);
-    });
-  }, []);
+      setInit(true)
+    })
+  }, [setInit])
 
   const particlesLoaded = (container) => {
-    console.log(container);
-  };
+    console.log(container)
+  }
 
   const options = useMemo(
     () => ({
       autoPlay: true,
       background: {
         color: {
-          value: "#0B0B0B",
+          value: '#0B0B0B',
         },
-        image: "",
-        position: "",
-        repeat: "",
-        size: "",
+        image: '',
+        position: '',
+        repeat: '',
+        size: '',
         opacity: 1,
       },
       backgroundMask: {
-        composite: "destination-out",
+        composite: 'destination-out',
         cover: {
           opacity: 1,
           color: {
-            value: "",
+            value: '',
           },
         },
         enable: false,
@@ -61,7 +62,7 @@ const ParticlesComponent = (props) => {
       duration: 0,
       fpsLimit: 120,
       interactivity: {
-        detectsOn: "window",
+        detectsOn: 'window',
         events: {
           onClick: {
             enable: false,
@@ -71,7 +72,7 @@ const ParticlesComponent = (props) => {
             selectors: {},
             enable: false,
             mode: {},
-            type: "circle",
+            type: 'circle',
           },
           onHover: {
             enable: false,
@@ -96,7 +97,7 @@ const ParticlesComponent = (props) => {
           attract: {
             distance: 200,
             duration: 0.4,
-            easing: "ease-out-quad",
+            easing: 'ease-out-quad',
             factor: 1,
             maxSpeed: 50,
             speed: 1,
@@ -138,7 +139,7 @@ const ParticlesComponent = (props) => {
             factor: 100,
             speed: 1,
             maxSpeed: 50,
-            easing: "ease-out-quad",
+            easing: 'ease-out-quad',
           },
           slow: {
             factor: 3,
@@ -153,17 +154,17 @@ const ParticlesComponent = (props) => {
             area: {
               gradient: {
                 start: {
-                  value: "#ffffff",
+                  value: '#ffffff',
                 },
                 stop: {
-                  value: "#000000",
+                  value: '#000000',
                 },
               },
               radius: 1000,
             },
             shadow: {
               color: {
-                value: "#000000",
+                value: '#000000',
               },
               length: 2000,
             },
@@ -194,14 +195,14 @@ const ParticlesComponent = (props) => {
           },
           enable: false,
           maxSpeed: 50,
-          mode: "bounce",
+          mode: 'bounce',
           overlap: {
             enable: true,
             retries: 0,
           },
         },
         color: {
-          value: "#fff",
+          value: '#fff',
           animation: {
             h: {
               count: 0,
@@ -255,12 +256,12 @@ const ParticlesComponent = (props) => {
           center: {
             x: 50,
             y: 50,
-            mode: "percent",
+            mode: 'percent',
             radius: 0,
           },
           decay: 0,
           distance: {},
-          direction: "bottom",
+          direction: 'bottom',
           drift: 0,
           enable: true,
           gravity: {
@@ -278,11 +279,11 @@ const ParticlesComponent = (props) => {
             options: {},
           },
           outModes: {
-            default: "out",
-            bottom: "out",
-            left: "out",
-            right: "out",
-            top: "out",
+            default: 'out',
+            bottom: 'out',
+            left: 'out',
+            right: 'out',
+            top: 'out',
           },
           random: false,
           size: false,
@@ -307,7 +308,7 @@ const ParticlesComponent = (props) => {
             height: 1080,
           },
           limit: {
-            mode: "delete",
+            mode: 'delete',
             value: 0,
           },
           value: 400,
@@ -321,16 +322,16 @@ const ParticlesComponent = (props) => {
             decay: 0,
             delay: 0,
             sync: false,
-            mode: "auto",
-            startValue: "random",
-            destroy: "none",
+            mode: 'auto',
+            startValue: 'random',
+            destroy: 'none',
           },
         },
         reduceDuplicates: false,
         shadow: {
           blur: 0,
           color: {
-            value: "#000",
+            value: '#000',
           },
           enable: false,
           offset: {
@@ -342,7 +343,7 @@ const ParticlesComponent = (props) => {
           close: true,
           fill: true,
           options: {},
-          type: "circle",
+          type: 'circle',
         },
         size: {
           value: 10,
@@ -353,9 +354,9 @@ const ParticlesComponent = (props) => {
             decay: 0,
             delay: 0,
             sync: false,
-            mode: "auto",
-            startValue: "random",
-            destroy: "none",
+            mode: 'auto',
+            startValue: 'random',
+            destroy: 'none',
           },
         },
         stroke: {
@@ -372,7 +373,7 @@ const ParticlesComponent = (props) => {
         },
         destroy: {
           bounds: {},
-          mode: "none",
+          mode: 'none',
           split: {
             count: 1,
             factor: {
@@ -398,7 +399,7 @@ const ParticlesComponent = (props) => {
             enable: false,
             value: 0,
           },
-          mode: "vertical",
+          mode: 'vertical',
           speed: 25,
         },
         tilt: {
@@ -409,7 +410,7 @@ const ParticlesComponent = (props) => {
             decay: 0,
             sync: false,
           },
-          direction: "clockwise",
+          direction: 'clockwise',
           enable: false,
         },
         twinkle: {
@@ -451,7 +452,7 @@ const ParticlesComponent = (props) => {
             decay: 0,
             sync: false,
           },
-          direction: "clockwise",
+          direction: 'clockwise',
           path: false,
         },
         orbit: {
@@ -473,7 +474,7 @@ const ParticlesComponent = (props) => {
         links: {
           blink: false,
           color: {
-            value: "#fff",
+            value: '#fff',
           },
           consent: false,
           distance: 100,
@@ -483,7 +484,7 @@ const ParticlesComponent = (props) => {
           shadow: {
             blur: 5,
             color: {
-              value: "#000",
+              value: '#000',
             },
             enable: false,
           },
@@ -510,8 +511,8 @@ const ParticlesComponent = (props) => {
       style: {},
       themes: [],
       zLayers: 100,
-      key: "snow",
-      name: "Snow",
+      key: 'snow',
+      name: 'Snow',
       motion: {
         disable: false,
         reduce: {
@@ -521,13 +522,17 @@ const ParticlesComponent = (props) => {
       },
     }),
     []
-  );
+  )
 
   return (
     <>
       <Particles id={props.id} init={particlesLoaded} options={options} />
     </>
-  );
-};
+  )
+}
 
-export default ParticlesComponent;
+ParticlesComponent.propTypes = {
+  id: PropTypes.string.isRequired,
+}
+
+export default ParticlesComponent

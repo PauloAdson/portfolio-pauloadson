@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
-import "./styles.css";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from 'react'
+import PropTypes from 'prop-types'
+import './styles.css'
+import { Link } from 'react-router-dom'
 
 const Projeto = ({
   class_projeto_img,
@@ -11,39 +12,39 @@ const Projeto = ({
   projeto_linguagens,
   projeto_link,
 }) => {
-  const [animate, setAnimate] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalImageSrc, setModalImageSrc] = useState("");
+  const [animate] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [modalImageSrc, setModalImageSrc] = useState('')
 
   const handleImageClick = () => {
-    setIsModalOpen(true), setModalImageSrc(projeto_img);
-  };
+    setIsModalOpen(true), setModalImageSrc(projeto_img)
+  }
 
   const closeModal = () => {
-    setIsModalOpen(false);
-  };
+    setIsModalOpen(false)
+  }
 
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (e.key === "Escape" && isModalOpen) {
-        closeModal();
+      if (e.key === 'Escape' && isModalOpen) {
+        closeModal()
       }
-    };
+    }
 
-    document.addEventListener("keydown", handleKeyDown);
+    document.addEventListener('keydown', handleKeyDown)
 
     return () => {
-      document.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [isModalOpen]);
+      document.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [isModalOpen])
 
   return (
     <>
       <div className="projeto">
         <div className="projeto__container-img">
           <img
-            className={`projeto__img ${class_projeto_img || ""} ${
-              animate ? "animate" : ""
+            className={`projeto__img ${class_projeto_img || ''} ${
+              animate ? 'animate' : ''
             }`}
             src={projeto_img}
             alt={projeto_img_desc}
@@ -97,7 +98,16 @@ const Projeto = ({
         </div>
       )}
     </>
-  );
-};
+  )
+}
 
-export default Projeto;
+Projeto.propTypes = {
+  class_projeto_img: PropTypes.string.isRequired,
+  projeto_img: PropTypes.string.isRequired,
+  projeto_img_desc: PropTypes.string.isRequired,
+  projeto_title: PropTypes.string.isRequired,
+  projeto_desc: PropTypes.string.isRequired,
+  projeto_linguagens: PropTypes.string.isRequired,
+  projeto_link: PropTypes.string.isRequired,
+}
+export default Projeto

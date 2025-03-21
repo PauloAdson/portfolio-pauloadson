@@ -28,9 +28,9 @@ div.footer_nav-links-sociais {
   gap: 32px;
 }
 
-
 /* Smartphone Geral */
-@media screen and (min-width:320px) and (max-width: 767px) {}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+}
 
 ul.lista-links-sociais {
   display: flex;

@@ -1,27 +1,26 @@
-import React from "react";
-import "./styles.css";
-import ParticlesComponent from "../../components/Particles/Particles";
-import Beneficio from "../../components/Beneficio/Beneficio";
-import Button from "../../components/Button/Button";
-import CarrosselDepoimentos from "../../components/CarrosselDepoimentos/CarrosselDepoimentos";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMobileScreenButton } from "@fortawesome/free-solid-svg-icons/faMobileScreenButton";
-import { faGaugeHigh } from "@fortawesome/free-solid-svg-icons";
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-import { faCropSimple } from "@fortawesome/free-solid-svg-icons";
-import { faChartLine } from "@fortawesome/free-solid-svg-icons";
-import Projeto from "../../components/Projeto/Projeto";
-import html5Logo from "../../assets/images/logos-ferramentas/html5-logo.png";
-import css3Logo from "../../assets/images/logos-ferramentas/css3-logo.png";
-import figmaLogo from "../../assets/images/logos-ferramentas/figma-logo.png";
-import javascriptLogo from "../../assets/images/logos-ferramentas/javascript-logo.png";
-import mongodbLogo from "../../assets/images/logos-ferramentas/mongodb-logo.png";
-import mysqlLogo from "../../assets/images/logos-ferramentas/mysql-logo.png";
-import nodejsLogo from "../../assets/images/logos-ferramentas/nodejs-logo.png";
-import phpLogo from "../../assets/images/logos-ferramentas/php-logo.png";
-import reactLogo from "../../assets/images/logos-ferramentas/react-logo.png";
-import Accordion from "../../components/Accordion/Accordion";
+import './styles.css'
+import ParticlesComponent from '../../components/Particles/Particles'
+import Beneficio from '../../components/Beneficio/Beneficio'
+import Button from '../../components/Button/Button'
+import CarrosselDepoimentos from '../../components/CarrosselDepoimentos/CarrosselDepoimentos'
+// import { Link } from 'react-router-dom'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMobileScreenButton } from '@fortawesome/free-solid-svg-icons/faMobileScreenButton'
+import { faGaugeHigh } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faCropSimple } from '@fortawesome/free-solid-svg-icons'
+import { faChartLine } from '@fortawesome/free-solid-svg-icons'
+import Projeto from '../../components/Projeto/Projeto'
+import html5Logo from '../../assets/images/logos-ferramentas/html5-logo.png'
+import css3Logo from '../../assets/images/logos-ferramentas/css3-logo.png'
+import figmaLogo from '../../assets/images/logos-ferramentas/figma-logo.png'
+// import javascriptLogo from '../../assets/images/logos-ferramentas/javascript-logo.png'
+// import mongodbLogo from '../../assets/images/logos-ferramentas/mongodb-logo.png'
+// import mysqlLogo from '../../assets/images/logos-ferramentas/mysql-logo.png'
+// import nodejsLogo from '../../assets/images/logos-ferramentas/nodejs-logo.png'
+// import phpLogo from '../../assets/images/logos-ferramentas/php-logo.png'
+import reactLogo from '../../assets/images/logos-ferramentas/react-logo.png'
+import Accordion from '../../components/Accordion/Accordion'
 // import Formulario from "../../components/Formulario/Formulario";
 
 const Home = () => {
@@ -41,11 +40,11 @@ const Home = () => {
               </h2>
             </div>
             <Button
-              btnText={"Fazer orçamento"}
+              btnText={'Fazer orçamento'}
               btnLink={
-                "https://wa.me/62995132226?text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20or%C3%A7amento."
+                'https://wa.me/62995132226?text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20or%C3%A7amento.'
               }
-              target={"_blank"}
+              target={'_blank'}
             />
           </div>
         </section>
@@ -57,46 +56,46 @@ const Home = () => {
           <div className="beneficios__container">
             <Beneficio
               beneficioIcon={faMobileScreenButton}
-              beneficioTitle={"100% Responsivo"}
-              beneficioParag={"Funciona perfeitamente em qualquer dispositivo."}
+              beneficioTitle={'100% Responsivo'}
+              beneficioParag={'Funciona perfeitamente em qualquer dispositivo.'}
             />
 
             <Beneficio
               beneficioIcon={faGaugeHigh}
-              beneficioTitle={"Carregamento rápido"}
-              beneficioParag={"Sites otimizados para melhor performance."}
+              beneficioTitle={'Carregamento rápido'}
+              beneficioParag={'Sites otimizados para melhor performance.'}
             />
 
             <Beneficio
               beneficioIcon={faMagnifyingGlass}
-              beneficioTitle={"SEO otimizado"}
+              beneficioTitle={'SEO otimizado'}
               beneficioParag={
-                "Sites otimizados para mecanismos de busca ajudam seu negócio a ser encontrado mais facilmente."
+                'Sites otimizados para mecanismos de busca ajudam seu negócio a ser encontrado mais facilmente.'
               }
             />
 
             <Beneficio
               beneficioIcon={faCropSimple}
-              beneficioTitle={"Design moderno"}
+              beneficioTitle={'Design moderno'}
               beneficioParag={
-                "Visual profissional e exclusivo para seu negócio."
+                'Visual profissional e exclusivo para seu negócio.'
               }
             />
 
             <Beneficio
               beneficioIcon={faChartLine}
-              beneficioTitle={"Conversão"}
+              beneficioTitle={'Conversão'}
               beneficioParag={
-                "Transforme visitantes em clientes com um site eficiente."
+                'Transforme visitantes em clientes com um site eficiente.'
               }
             />
           </div>
           <Button
-            btnText={"Fazer orçamento"}
+            btnText={'Fazer orçamento'}
             btnLink={
-              "https://wa.me/62995132226?text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20or%C3%A7amento."
+              'https://wa.me/62995132226?text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20or%C3%A7amento.'
             }
-            target={"_blank"}
+            target={'_blank'}
           />
         </section>
 
@@ -114,7 +113,7 @@ const Home = () => {
             <Projeto
               class_projeto_img="azevedo-advocacia"
               projeto_img={
-                "https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/azevedo-avocacia.png"
+                'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/azevedo-avocacia.png'
               }
               projeto_img_desc="Imagem da Página Azevedo Advocia e Consultoria Jurídica"
               projeto_title="Azevedo Advocia e Consultoria Jurídica"
@@ -122,15 +121,15 @@ const Home = () => {
               projeto_linguagens={[
                 {
                   src: html5Logo,
-                  desc: "Logo HTML5",
+                  desc: 'Logo HTML5',
                 },
                 {
                   src: css3Logo,
-                  desc: "Logo CSS3",
+                  desc: 'Logo CSS3',
                 },
                 {
                   src: figmaLogo,
-                  desc: "Logo Figma",
+                  desc: 'Logo Figma',
                 },
               ]}
               projeto_link="https://asazevedo.adv.br/"
@@ -139,7 +138,7 @@ const Home = () => {
             <Projeto
               class_projeto_img="furlan-solucoes"
               projeto_img={
-                "https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/site-furlan-desktop.png"
+                'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/site-furlan-desktop.png'
               }
               projeto_img_desc="Imagem da Página Furlan Soluções Financeiras"
               projeto_title="Furlan Soluções Financeiras"
@@ -147,15 +146,15 @@ const Home = () => {
               projeto_linguagens={[
                 {
                   src: html5Logo,
-                  desc: "Logo HTML5",
+                  desc: 'Logo HTML5',
                 },
                 {
                   src: css3Logo,
-                  desc: "Logo CSS3",
+                  desc: 'Logo CSS3',
                 },
                 {
                   src: figmaLogo,
-                  desc: "Logo Figma",
+                  desc: 'Logo Figma',
                 },
               ]}
               projeto_link="https://furlansolucoesfinanceiras.com.br/"
@@ -164,7 +163,7 @@ const Home = () => {
             <Projeto
               class_projeto_img="maratona-vocal"
               projeto_img={
-                "https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/maratonavocal.png"
+                'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/maratonavocal.png'
               }
               projeto_img_desc="Imagem página de vendas Maratona Vocal"
               projeto_title="Página de Vendas | Maratona Vocal"
@@ -172,24 +171,24 @@ const Home = () => {
               projeto_linguagens={[
                 {
                   src: reactLogo,
-                  desc: "Logo React",
+                  desc: 'Logo React',
                 },
                 {
                   src: html5Logo,
-                  desc: "Logo HTML5",
+                  desc: 'Logo HTML5',
                 },
                 {
                   src: css3Logo,
-                  desc: "Logo CSS3",
+                  desc: 'Logo CSS3',
                 },
               ]}
               projeto_link="https://maratonavocal.vercel.app/"
             />
           </div>
           <Button
-            btnText={"ver portfólio"}
-            btnLink={"/portfolio/#projetos"}
-            target={"_self"}
+            btnText={'ver portfólio'}
+            btnLink={'/portfolio/#projetos'}
+            target={'_self'}
           />
         </section>
 
@@ -238,7 +237,7 @@ const Home = () => {
         </section> */}
       </main>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

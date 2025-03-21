@@ -1,5 +1,4 @@
-import React from "react";
-import "./styles.css";
+import './styles.css'
 
 const Formulario = () => {
   return (
@@ -14,7 +13,7 @@ const Formulario = () => {
               type="text"
               name="name"
               placeholder="Digite seu nome"
-              autocomplete="off"
+              autoComplete="off"
             />
             <label>Email</label>
             <input
@@ -22,7 +21,7 @@ const Formulario = () => {
               type="email"
               name="email"
               placeholder="Digite seu email"
-              autocomplete="on"
+              autoComplete="on"
             />
             <label>Mensagem</label>
             <textarea
@@ -47,7 +46,7 @@ const Formulario = () => {
         </section>
       </main>
     </>
-  );
-};
+  )
+}
 
-export default Formulario;
+export default Formulario

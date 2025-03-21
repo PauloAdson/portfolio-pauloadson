@@ -1,5 +1,5 @@
-import React from "react";
-import "./styles.css";
+import React from 'react'
+import './styles.css'
 
 export class Contato extends React.Component {
   render() {
@@ -15,7 +15,7 @@ export class Contato extends React.Component {
                 type="text"
                 name="name"
                 placeholder="Digite seu nome"
-                autocomplete="off"
+                autoComplete="off"
               />
               <label>Email</label>
               <input
@@ -23,7 +23,7 @@ export class Contato extends React.Component {
                 type="email"
                 name="email"
                 placeholder="Digite seu email"
-                autocomplete="on"
+                autoComplete="on"
               />
               <label>Mensagem</label>
               <textarea
@@ -48,6 +48,6 @@ export class Contato extends React.Component {
           </section>
         </main>
       </>
-    );
+    )
   }
 }
