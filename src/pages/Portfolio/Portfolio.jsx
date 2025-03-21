@@ -6,7 +6,7 @@ import logoJavaScript from '../../assets/images/logos-ferramentas/javascript-log
 import logoReact from '../../assets/images/logos-ferramentas/react-logo.png'
 import logoLinkedin from '../../assets/images/logos-ferramentas/linkedin-logo.png'
 import logoGitHub from '../../assets/images/logos-ferramentas/github-logo.png'
-import pdfCurriculo from '../../assets/Curriculo-PauloAdson.pdf'
+import pdfCurriculo from '../../assets/Paulo_Adson_Curriculo.pdf'
 // import pdfCurriculo from '../../assets/PauloAdson-Curriculo.pdf'
 import fotoDePaulo from '../../assets/images/paulo-adson.png'
 import { Link } from 'react-router-dom'
