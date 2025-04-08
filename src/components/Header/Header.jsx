@@ -1,31 +1,31 @@
-import { useState } from 'react'
-import './styles.css'
-import '../../index.css'
-import logo from '/pauloadson-logo-longa.png'
-import { Link } from 'react-router-dom'
+import { useState } from 'react';
+import './styles.css';
+import '../../index.css';
+import logo from '/pauloadson-logo-longa.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState(false);
 
   const toggleClass = () => {
-    setActive((prev) => !prev)
-  }
+    setActive((prev) => !prev);
+  };
 
   const closeMenu = () => {
-    setActive(false)
-  }
+    setActive(false);
+  };
 
   // let closeMenu = (active = false);
   return (
     <>
-      <header className="menu-principal">
+      <header className='menu-principal'>
         <nav>
           <Link to={'./'}>
             <img
-              className="img-logo"
+              className='img-logo'
               src={logo}
-              alt="Logo Paulo Adson"
-              title="Paulo Adson Desenvolvedor"
+              alt='Logo Paulo Adson'
+              title='Paulo Adson Desenvolvedor'
             />
           </Link>
 
@@ -33,9 +33,9 @@ const Header = () => {
             onClick={toggleClass}
             className={active ? 'mobile-menu active' : 'mobile-menu'}
           >
-            <div className="line1"></div>
-            <div className="line2"></div>
-            <div className="line3"></div>
+            <div className='line1'></div>
+            <div className='line2'></div>
+            <div className='line3'></div>
           </div>
 
           <ul
@@ -44,14 +44,14 @@ const Header = () => {
             }
           >
             <li>
-              <Link to={'./'} className="menu-links" onClick={closeMenu}>
+              <Link to={'./'} className='menu-links' onClick={closeMenu}>
                 Início
               </Link>
             </li>
             <li>
               <Link
                 to={'/portfolio'}
-                className="menu-links"
+                className='menu-links'
                 onClick={closeMenu}
               >
                 Portfólio
@@ -60,14 +60,14 @@ const Header = () => {
             <li>
               <Link
                 to={'/portfolio/#sobre'}
-                className="menu-links"
+                className='menu-links'
                 onClick={closeMenu}
               >
                 Sobre
               </Link>
             </li>
             <li>
-              <Link to={'/contato'} className="menu-links" onClick={closeMenu}>
+              <Link to={'/contato'} className='menu-links' onClick={closeMenu}>
                 Contato
               </Link>
             </li>
@@ -75,7 +75,7 @@ const Header = () => {
         </nav>
       </header>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

@@ -1,11 +1,11 @@
-import './styles.css'
-import Depoimento from '../Depoimento/Depoimento'
-import logoAzevedoAdvocacia from '../../assets/images/logos-clientes/azevedo-advocacia-logo.png'
-import logoFurlanSolucoes from '../../assets/images/logos-clientes/logo-furlan-solucoes.png'
+import './styles.css';
+import Depoimento from '../Depoimento/Depoimento';
+import logoAzevedoAdvocacia from '../../assets/images/logos-clientes/azevedo-advocacia-logo.png';
+import logoFurlanSolucoes from '../../assets/images/logos-clientes/logo-furlan-solucoes.png';
 
 const CarrosselDepoimentos = () => {
   return (
-    <div className="depoimentos__carrosel">
+    <div className='depoimentos__carrosel'>
       <Depoimento
         bgLogo={'white'}
         logoCliente={logoAzevedoAdvocacia}
@@ -23,7 +23,7 @@ const CarrosselDepoimentos = () => {
         comentario={'Gostei muito👏'}
       />
     </div>
-  )
-}
+  );
+};
 
-export default CarrosselDepoimentos
+export default CarrosselDepoimentos;
