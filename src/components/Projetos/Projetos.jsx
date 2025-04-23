@@ -202,7 +202,7 @@ const Projetos = () => {
             projeto_link='https://deploy-spotify-8v75.onrender.com/'
           />
 
-          <Projeto
+          {/* <Projeto
             class_projeto_img='curso-ebd'
             projeto_img={
               'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/curso-ebd.png'
@@ -229,7 +229,7 @@ const Projetos = () => {
               },
             ]}
             projeto_link='https://curso-ebd.vercel.app/'
-          />
+          /> */}
 
           <Projeto
             class_projeto_img='consulta-votacao'
