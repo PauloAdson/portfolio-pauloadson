@@ -163,7 +163,7 @@ const Home = () => {
             <Projeto
               class_projeto_img='maratona-vocal'
               projeto_img={
-                'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/maratonavocal.png'
+                'https://raw.githubusercontent.com/PauloAdson/portfolio-pauloadson/refs/heads/main/src/assets/images/projetos/maratonavocal-desktop.png'
               }
               projeto_img_desc='Imagem página de vendas Maratona Vocal'
               projeto_title='Página de Vendas | Maratona Vocal'

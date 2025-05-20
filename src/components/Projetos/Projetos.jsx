@@ -51,7 +51,7 @@ const Projetos = () => {
           <Projeto
             class_projeto_img='furlan-solucoes'
             projeto_img={
-              'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/site-furlan-desktop.png'
+              'https://raw.githubusercontent.com/PauloAdson/portfolio-pauloadson/refs/heads/main/src/assets/images/projetos/site-furlan-desktop.png'
             }
             projeto_img_desc='Imagem da Página Furlan Soluções Financeiras'
             projeto_title='Furlan Soluções Financeiras'
@@ -76,7 +76,7 @@ const Projetos = () => {
           <Projeto
             class_projeto_img='maratona-vocal'
             projeto_img={
-              'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/maratonavocal.png'
+              'https://raw.githubusercontent.com/PauloAdson/portfolio-pauloadson/refs/heads/main/src/assets/images/projetos/maratonavocal-desktop.png'
             }
             projeto_img_desc='Imagem página de vendas Maratona Vocal'
             projeto_title='Página de Vendas | Maratona Vocal'
@@ -101,7 +101,7 @@ const Projetos = () => {
           <Projeto
             class_projeto_img='petlife'
             projeto_img={
-              'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/petlife.png'
+              'https://raw.githubusercontent.com/PauloAdson/portfolio-pauloadson/refs/heads/main/src/assets/images/projetos/petlife-desktop.png'
             }
             projeto_img_desc='Imagem página de uma clínica veterinária PetLife'
             projeto_title='PetLife'
@@ -126,7 +126,7 @@ const Projetos = () => {
           <Projeto
             class_projeto_img='Aulas de Música'
             projeto_img={
-              'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/aulas-de-musica.png'
+              'https://raw.githubusercontent.com/PauloAdson/portfolio-pauloadson/refs/heads/main/src/assets/images/projetos/aulas-de-musica.png'
             }
             projeto_img_desc='Imagem da Página Aulas de Música'
             projeto_title='Aulas de Música'
@@ -155,7 +155,7 @@ const Projetos = () => {
           <Projeto
             class_projeto_img='landing-page'
             projeto_img={
-              'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/landing-page.png'
+              'https://raw.githubusercontent.com/PauloAdson/portfolio-pauloadson/refs/heads/main/src/assets/images/projetos/landing-page.png'
             }
             projeto_img_desc='Imagem da Landing Page'
             projeto_title='Landing Page'
@@ -180,7 +180,7 @@ const Projetos = () => {
           <Projeto
             class_projeto_img='copia-spotify'
             projeto_img={
-              'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/spotify.png'
+              'https://raw.githubusercontent.com/PauloAdson/portfolio-pauloadson/refs/heads/main/src/assets/images/projetos/spotify.png'
             }
             projeto_img_desc='Imagem da Página Cópia do Spotify'
             projeto_title='Cópia do Spotify'
@@ -234,7 +234,7 @@ const Projetos = () => {
           <Projeto
             class_projeto_img='consulta-votacao'
             projeto_img={
-              'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/projetos-bg/consultarvotacao.png'
+              'https://raw.githubusercontent.com/PauloAdson/portfolio-pauloadson/refs/heads/main/src/assets/images/projetos/consultarvotacao.png'
             }
             projeto_img_desc='Imagem página local de votação'
             projeto_title='Consulta de Local de Votação'
