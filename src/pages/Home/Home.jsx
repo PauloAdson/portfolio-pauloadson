@@ -138,7 +138,7 @@ const Home = () => {
             <Projeto
               class_projeto_img='furlan-solucoes'
               projeto_img={
-                'https://raw.githubusercontent.com/PauloAdson/portfolio/refs/heads/main/src/assets/images/site-furlan-desktop.png'
+                'https://raw.githubusercontent.com/PauloAdson/portfolio-pauloadson/refs/heads/main/src/assets/images/projetos/site-furlan-desktop.png'
               }
               projeto_img_desc='Imagem da Página Furlan Soluções Financeiras'
               projeto_title='Furlan Soluções Financeiras'

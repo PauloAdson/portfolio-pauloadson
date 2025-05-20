@@ -101,7 +101,7 @@ const Projetos = () => {
           <Projeto
             class_projeto_img='petlife'
             projeto_img={
-              'https://raw.githubusercontent.com/PauloAdson/portfolio-pauloadson/refs/heads/main/src/assets/images/projetos/petlife-desktop.png'
+              'https://raw.githubusercontent.com/PauloAdson/portfolio-pauloadson/refs/heads/main/src/assets/images/projetos/site-petlife-desktop.png'
             }
             projeto_img_desc='Imagem página de uma clínica veterinária PetLife'
             projeto_title='PetLife'
