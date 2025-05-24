@@ -18,6 +18,7 @@ export class Contato extends React.Component {
                 autoComplete='off'
               />
               <label>Email</label>
+
               <input
                 required
                 type='email'
@@ -25,7 +26,9 @@ export class Contato extends React.Component {
                 placeholder='Digite seu email'
                 autoComplete='on'
               />
+
               <label>Mensagem</label>
+
               <textarea
                 name='message'
                 cols='30'
