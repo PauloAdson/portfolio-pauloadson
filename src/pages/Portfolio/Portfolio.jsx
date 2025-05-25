@@ -49,6 +49,7 @@ const Portfolio = () => {
               >
                 <img src={logoLinkedin} alt='logo-linkedin' width='42' />
               </Link>
+
               <Link
                 to={'https://github.com/PauloAdson'}
                 target='_blank'
@@ -61,6 +62,7 @@ const Portfolio = () => {
 
           <div className='sobre__container-biografia'>
             <h2 className='sobre__biografia-title uppercase'>Sobre</h2>
+
             <p className='sobre__biografia-content'>
               Sou um Desenvolvedor Front-End focado em criar interfaces
               funcionais e bem estruturadas. Minha abordagem une habilidades
@@ -71,6 +73,7 @@ const Portfolio = () => {
               estudos de React, buscando expandir meu conhecimento e contribuir
               para projetos inovadores.
             </p>
+
             <Link
               to={pdfCurriculo}
               className='sobre__curriculo'
