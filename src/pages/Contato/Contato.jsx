@@ -10,6 +10,7 @@ export class Contato extends React.Component {
             <h2>Contato</h2>
             <form action='https://api.staticforms.xyz/submit' method='post'>
               <label>Nome</label>
+
               <input
                 required
                 type='text'
@@ -17,6 +18,7 @@ export class Contato extends React.Component {
                 placeholder='Digite seu nome'
                 autoComplete='off'
               />
+
               <label>Email</label>
 
               <input
@@ -35,6 +37,7 @@ export class Contato extends React.Component {
                 rows='10'
                 placeholder='Digite sua mensagem'
               ></textarea>
+
               <button type='submit'>Enviar</button>
 
               <input
@@ -42,6 +45,7 @@ export class Contato extends React.Component {
                 name='accessKey'
                 value='01417344-2dc6-4a48-95e0-384f4d9d904d'
               />
+
               <input
                 type='hidden'
                 name='redirectTo'

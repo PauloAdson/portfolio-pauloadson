@@ -197,6 +197,7 @@ const Home = () => {
             <h2 className='depoimentos__title uppercase'>
               O que dizem sobre meu trabalho
             </h2>
+
             <span className='depoimentos__subtitle'>
               Veja o que meus clientes dizem sobre os sites que desenvolvi:
             </span>
@@ -213,28 +214,28 @@ const Home = () => {
               title='Quais tipos de sites você desenvolve?'
               response='Desenvolvo sites institucionais, blogs, portfólios, landing pages, lojas virtuais e sistemas web. Todos os sites são responsivos e otimizados para SEO.'
             />
+
             <Accordion
               title='Quais tecnologias você utiliza?'
               response='Trabalho com HTML, CSS, JavaScript, React, Node.js, PHP, MySQL e WordPress. Utilizo o Figma para prototipagem e design.'
             />
+
             <Accordion
               title='Quanto tempo leva para desenvolver um site?'
               response='Depende do projeto, mas uma landing page pode levar entre 3 a 7 dias, enquanto sites mais complexos podem levar algumas semanas.'
             />
+
             <Accordion
               title='Qual o valor para criar um site?'
               response='O preço varia de acordo com a complexidade do projeto. Entre em contato para um orçamento personalizado.'
             />
+
             <Accordion
               title='Você oferece manutenção e suporte?'
               response='Sim! Tenho planos mensais de manutenção, garantindo atualizações, segurança, backups e otimizações para o seu site.'
             />
           </div>
         </section>
-
-        {/* <section className="contato">
-          <Formulario />
-        </section> */}
       </main>
     </>
   );
