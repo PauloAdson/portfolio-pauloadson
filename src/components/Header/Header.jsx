@@ -15,7 +15,6 @@ const Header = () => {
     setActive(false);
   };
 
-  // let closeMenu = (active = false);
   return (
     <>
       <header className='menu-principal'>
@@ -48,6 +47,7 @@ const Header = () => {
                 Início
               </Link>
             </li>
+
             <li>
               <Link
                 to={'/portfolio'}
@@ -57,6 +57,7 @@ const Header = () => {
                 Portfólio
               </Link>
             </li>
+
             <li>
               <Link
                 to={'/portfolio/#sobre'}
@@ -66,6 +67,7 @@ const Header = () => {
                 Sobre
               </Link>
             </li>
+
             <li>
               <Link to={'/contato'} className='menu-links' onClick={closeMenu}>
                 Contato
